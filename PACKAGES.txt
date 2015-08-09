@@ -1,0 +1,4 @@
+i3-wm
+compton
+conky
+rxvt-unicode
