@@ -1,0 +1,28 @@
+background        no
+out_to_console 	  yes
+out_to_x	  no
+update_interval	  1
+total_run_times	  0
+short_units	  yes
+pad_percents	  3
+
+override_utf8_locale yes
+
+TEXT
+,[
+#Finds current volume. May need modified depending on your setup
+  {"full_text": "☊ [|${exec sh ~/.i3/scripts/spotify.sh}] ♪ ${exec amixer get Master | grep -o "\[.*%\]"} ", "color":"\#268BD2"},
+#  {"\#6F3BFF"},
+#  {"\#00fff2"},
+# wifi
+  {"full_text": "[${wireless_link_qual wlan0}]", "color":"\#ff00f3"},
+#Shows current memory usage with a bar
+  {"full_text": " ☳ [$membar] ", "color":"\#B58900"},
+#Shows current CPU usage with a bar
+  {"full_text": " ▣ [${cpubar}] ", "color":"\#00A9B5"},
+#Shows battery time
+  {"full_text": "  ⌛ [${battery_time}] %[${battery_percent}] ","color": "\#dc322f"},
+#Shows time
+  {"full_text": " [${time %a %b %d} ${time %H:%M:%S}] ","color": "\#2fdc57"}
+]
+
