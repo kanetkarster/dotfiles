@@ -1,4 +1,5 @@
 i3-wm
 compton
 conky
+hsetroot
 rxvt-unicode
