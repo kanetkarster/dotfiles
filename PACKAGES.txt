@@ -2,4 +2,6 @@ i3-wm
 compton
 conky
 hsetroot
+redshift
 rxvt-unicode
+zathura
