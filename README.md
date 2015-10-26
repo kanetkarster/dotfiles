@@ -15,5 +15,5 @@ Changes
 1. `git checkout <dotfile>-split`
 2. make, commit and push changes
 3. `git checkout master`
-4. `git subtree pull --prefix=<dotfile> github <dotfile>-split
+4. `git subtree pull --prefix=<dotfile> github <dotfile>-split`
 
