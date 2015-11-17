@@ -7,6 +7,9 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " let Vundle manage Vundle, required
+"all
+set nu
+
 "essential
 Plugin 'gmarik/Vundle.vim'
 
@@ -28,6 +31,7 @@ Plugin 'xuhdev/vim-latex-live-preview'
 "Rust
 Plugin 'rust-lang/rust.vim'
 Plugin 'phildawes/racer'
+
 set hidden
 let g:racer_cmd = "~/Programming/rust/racer/target/release/racer"
 let RUST_SRC_PATH= "~/Programming/rust/rust/racer"
