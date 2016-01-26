@@ -17,7 +17,6 @@ urxvt*color12: #25aeff
 urxvt*color13: #ef0051
 urxvt*color14: #4bb8fd
 urxvt*color15: #a020f0
-urxvt*fading: 50
 urxvt*font: xft:Bitstream\ Vera\ Sans\ Mono:style=roman:pixelsize=13
 urxvt*scrollBar: false
 
@@ -31,5 +30,5 @@ urxvt*scrollBar: false
 #URxvt.perl-ext-common: default,clipboard
 
 URxvt*.transparent: true
-URxvt*.shading: 50 
+URxvt*.shading: 20
 
