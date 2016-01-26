@@ -18,7 +18,7 @@ Plugin 'tpope/vim-fugitive'
 
 "Special
 "git
-Plugin 'vim-scripts/gitignore'
+""Plugin 'vim-scripts/gitignore'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 "LaTeX
@@ -41,6 +41,13 @@ filetype plugin indent on
 set tabstop=4
 set shiftwidth=4
 set expandtab
+
+" include directories "
+let g:syntastic_c_include_dirs = [ '../include', 'include', 'inc' ]
+
+" c++ setup "
+let g:syntastic_cpp_compiler = 'g++'
+let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
 
 " text wrap
 setlocal tw=100
