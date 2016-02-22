@@ -14,7 +14,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 
-Plugin 'tpope/vim-fugitive'
+Plugin 'Valloric/YouCompleteMe'
 
 "Special
 "git
@@ -26,7 +26,6 @@ Plugin 'xuhdev/vim-latex-live-preview'
 
 "Rust
 Plugin 'rust-lang/rust.vim'
-Plugin 'phildawes/racer'
 set hidden
 let g:racer_cmd = "~/Programming/rust/racer/target/release/racer"
 let RUST_SRC_PATH= "~/Programming/rust/rust/racer"
@@ -42,12 +41,17 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
+"hot keys"
+nnoremap <S-tab> :tabprevious<CR>
+nnoremap <tab>   :tabnext<CR>
+nnoremap <C-t>   :tabnew<CR>
+
 " include directories "
 let g:syntastic_c_include_dirs = [ '../include', 'include', 'inc' ]
 
 " c++ setup "
 let g:syntastic_cpp_compiler = 'g++'
-let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
+let g:syntastic_cpp_compiler_options = ' -std=c++11'
 
 " text wrap
 setlocal tw=100
