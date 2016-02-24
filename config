@@ -465,6 +465,8 @@ sync_spawn_exec @scripts_dir/load_cookies.sh @data_home/uzbl/session-cookies.txt
 set uri = uzbl.org/doesitwork/@COMMIT
 
 # vim: set fdm=syntax:
+
+# disable javascript
 set       enable_scripts      = 0
 
 # Switch to insert mode if a (editable) html form is clicked
