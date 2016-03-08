@@ -11,11 +11,11 @@ override_utf8_locale yes
 TEXT
 ,[
 #Finds current volume. May need modified depending on your setup
-  {"full_text": "☊ [|${exec sh ~/.i3/scripts/spotify.sh}] ♪ ${exec amixer get Master | grep -o "\[.*%\]"} ", "color":"\#268BD2"},
+  {"full_text": "☊ [|${exec sh ~/.i3/scripts/spotify.sh}] ♪ [${exec amixer -D pulse sget Master | sed -n 's/.*\[\(.*\)%\].*/\1/p' | head -1}] ", "color":"\#268BD2"},
 #  {"\#6F3BFF"},
 #  {"\#00fff2"},
 # wifi
-  {"full_text": "[${wireless_link_qual wlan0}]", "color":"\#ff00f3"},
+  {"full_text": "[${exec exec iwconfig wlp2s0 | sed -n 's/.*Quality=\(.*\)\/.*/\1/p'}]", "color":"\#ff00f3"},
 #Shows current memory usage with a bar
   {"full_text": " ☳ [$membar] ", "color":"\#B58900"},
 #Shows current CPU usage with a bar
