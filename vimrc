@@ -1,6 +1,7 @@
 "basic settings
 set nocompatible              " be iMproved, required
 filetype off                  " required
+
 "set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -14,7 +15,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 
 "Special
 "git
@@ -35,6 +36,8 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 " general "
+" highlighting
+syntax on
 " spacing
 filetype plugin indent on
 set tabstop=4
