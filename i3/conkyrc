@@ -11,7 +11,7 @@ override_utf8_locale yes
 TEXT
 ,[
 #Finds current volume. May need modified depending on your setup
-  {"full_text": "☊ [|${exec ps aux | grep -q "[n]cmpcpp" && ncmpcpp --current-song={%a\ \-\ %t}}] ♪ [${exec amixer -D pulse sget Master | sed -n 's/.*\[\(.*\)%\].*/\1/p' | head -1}] ", "color":"\#268BD2"},
+  {"full_text": "☊ [${scroll 20 ${exec mpc current}}] ♪ [${exec amixer -D pulse sget Master | sed -n 's/.*\[\(.*\)%\].*/\1/p' | head -1}] ", "color":"\#268BD2"},
 #  {"\#6F3BFF"},
 #  {"\#00fff2"},
 # wifi
