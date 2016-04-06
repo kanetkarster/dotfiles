@@ -170,7 +170,7 @@ bindsym XF86TouchpadToggle exec bash ~/.i3/scripts/touchpad.sh # disable touchpa
 bindsym XF86Calculator exec gnome-calculator #calculator
 #lockscreen
 bindsym $mod+Shift+p exec i3lock -c 000000 && sudo pm-suspend
-bindsym $mod+p exec i3lock -c 000000
+bindsym $mod+p exec i3lock -i ~/media/pictures/wall/space1.png -c '#000000' -o '#191d0f' -w '#C21527' -l '#ffffff' -e
 #audio
 bindsym XF86AudioRaiseVolume exec amixer -D pulse sset Master unmute && amixer -D pulse  sset Master 5%+
 bindsym XF86AudioLowerVolume exec amixer -D pulse sset Master unmute && amixer -D pulse  sset Master 5%-
